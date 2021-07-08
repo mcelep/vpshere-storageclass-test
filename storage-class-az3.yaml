@@ -1,0 +1,9 @@
+kind: StorageClass
+apiVersion: storage.k8s.io/v1
+metadata:
+  name: az3
+provisioner: kubernetes.io/vsphere-volume
+parameters:
+  datastore: "datastore-esx3"
+  diskformat: thin
+  fstype: ext3
